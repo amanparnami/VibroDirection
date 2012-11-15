@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">EyeGaze</string>
+    
+    <!-- Main Page -->
+    <string name="b_create">Create</string>
+    <string name="b_next">Next</string>
+    <string name="l_exp_name">Experimenter</string>
+    <string name="tb_exp_name_hint">Enter experimenter name</string>
+	<string name="l_p_id">Participant(P) Id</string>
+	<string name="l_p_info">Participant Info</string>
+	<string name="tb_p_id_hint">Enter participant id</string>
+	<string name="l_p_gen">P Gender</string>
+	<string name="l_p_age">P Age</string>
+	<string name="l_p_age_yr">yr</string>
+	<string name="l_p_age_mo">m</string>
+	<string name="l_p_age_da">d</string>
+	<string name="rb_p_gen_m">M</string>
+	<string name="rb_p_gen_f">F</string>
+	<string name="l_mode">Mode</string>
+	<string name="rb_mode_ex">Experiment</string>
+	<string name="rb_mode_test">Test</string>
+	<string name="c_green">#00FF00</string>
+	<string name="c_blue">#0000FF</string>
+	<string name="c_red">#FF0000</string>
+	
+	<!-- Settings Page -->
+	<string name="l_alert_interval">Alert Interval(sec)</string>
+	<string name="l_pattern">Current Pattern</string>
+	<string name="b_new_pattern">Generate Pattern</string>
+	<string name="b_start_ex">Start Experiment</string>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout 
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/l_exp_name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/l_mode"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup 
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:orientation="horizontal"
+                	android:id="@+id/rg_mode">
+
+            <RadioButton
+                android:id="@+id/rb_mode_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:text="@string/rb_mode_ex" />
+
+            <RadioButton
+                android:id="@+id/rb_mode_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_mode_test" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/l_exp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/l_exp_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tb_exp_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tb_exp_name_hint" 
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/l_p_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/l_p_id"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tb_p_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tb_p_id_hint"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp" 
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="5dp" 
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l_p_gen"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+				<RadioGroup 
+				    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:orientation="horizontal"
+                	android:id="@+id/rg_p_gen">
+				    <RadioButton
+                    android:id="@+id/rb_p_gen_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/rb_p_gen_m" 
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb_p_gen_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_p_gen_f" />
+				</RadioGroup>
+                
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1.2"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/l_p_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l_p_age"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/tb_p_age_yr"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" 
+                    android:maxLength="2"/>
+
+                <TextView
+                    android:id="@+id/l_p_age_yr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l_p_age_yr"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tb_p_age_mo"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" 
+                    android:maxLength="2"/>
+
+                <TextView
+                    android:id="@+id/l_p_age_mo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l_p_age_mo"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <EditText
+                    android:id="@+id/tb_p_age_da"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" 
+                    android:maxLength="2"/>
+
+                <TextView
+                    android:id="@+id/l_p_age_da"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l_p_age_da"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/b_next"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:onClick="onNextButtonClick"/>
+
+</LinearLayout>
+</ScrollView>
